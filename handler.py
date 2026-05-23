@@ -201,9 +201,9 @@ async def generate_audio(
         stop_id = encoded[0] if encoded else 128261
     print(f"[Handler] Stop token ID resolved: {stop_id}")
 
-    # Fixed max_tokens matching the working Kaggle server configuration.
-    # The loop detector handles any overshoot on the top end.
-    max_tokens = 800
+    # Increased max_tokens to allow longer generations (up to ~30 seconds).
+    # The loop detector handles any overshoot or hallucinations.
+    max_tokens = 2048
     print(f"[Handler] max_tokens={max_tokens}")
 
     sampling_params = SamplingParams(
