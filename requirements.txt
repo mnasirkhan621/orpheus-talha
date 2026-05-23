@@ -1,0 +1,11 @@
+runpod>=1.7.0
+snac
+torchaudio
+librosa
+soundfile
+python-multipart
+transformers==4.46.3
+tokenizers==0.20.3
+huggingface_hub
+numpy
+autoawq

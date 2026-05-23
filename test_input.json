@@ -1,0 +1,7 @@
+{
+  "input": {
+    "action": "tts",
+    "text": "Hello! I am running as a serverless endpoint on RunPod. The audio quality is crystal clear!",
+    "voice_id": "tara"
+  }
+}
